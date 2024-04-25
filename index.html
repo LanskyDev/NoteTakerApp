@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading" class="heading">Note Taker</h1>
+        <p class="sub-heading">Your note taking app!</p>
+    </header>
+    <main>
+        <article>
+            <form action="" id="noteForm" class="note-form">
+                <label for="noteTextarea">Note:</label>
+                <textarea id="noteTextarea" name="noteTextarea" rows="15" cols="30"
+                    maxlength="280">What's on your mind?</textarea>
+                <button type="submit" id="submitButton">Add Note</button>
+            </form>
+        </article>
+        <article id="notesArticle" class="notes-article">
+            <h3 class="your-notes-heading">Your Notes</h3>
+            <section id="notesContainer" class="notes-container">
+                <p>Add some notes!</p>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
